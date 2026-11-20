@@ -1,0 +1,6 @@
+{
+  "name": "Totti Cinema Studio — استوديو فيديو الأساطير",
+  "description": "استوديو سينمائي لتحويل صور فرانشيسكو توتي إلى فيديو ملحمي متكامل مع موسيقى ومؤثرات صوتية ولمسات خفية وتصدير مباشر.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Cairo', system-ui, -apple-system, sans-serif;
+    --font-display: 'Cinzel', 'Cairo', serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: #080708;
+    color: #F5F2EC;
+    scroll-behavior: smooth;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0B0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C262B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D99B26;
+}
+
+/* Custom range slider */
+input[type='range'].studio-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type='range'].studio-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: #282328;
+}
+
+input[type='range'].studio-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: #D99B26;
+  margin-top: -5px;
+  border: 2px solid #080708;
+  transition: transform 0.15s ease;
+}
+
+input[type='range'].studio-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
